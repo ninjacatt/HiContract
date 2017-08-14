@@ -1,0 +1,8 @@
+#TO BUILD:
+install testrpc
+install truffle
+
+run testrpc
+truffle compile 
+truffle deploy
+truffle console : to test the contracts 
