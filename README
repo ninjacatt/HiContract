@@ -6,3 +6,12 @@ run testrpc
 truffle compile 
 truffle deploy
 truffle console : to test the contracts 
+
+For metaCoin:
+To get balance in truffle console, use nest then
+
+truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.call(web3.eth.accounts[0])).then(bal => console.log(bal.toNumber()))
+10000
+
+truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.call(web3.eth.accounts[1])).then(bal => console.log(bal.toNumber()))
+0
