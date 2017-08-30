@@ -16,3 +16,7 @@ truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.c
 truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.call(web3.eth.accounts[1])).then(bal => console.log(bal.toNumber()))
 0
 
+Next:
+. Add new contract for voting
+. Add new contract for group lottery
+. Add UI for group lottery 
