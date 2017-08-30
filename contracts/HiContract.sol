@@ -1,9 +1,9 @@
 pragma solidity ^0.4.4;
 
-contract HiContract{
+contract HiContract {
+
   address public owner;
   mapping(address => uint) balances;
-
   // constructor run upon contract creation 
   function HiContract() {
     // when contract first deploy, set owner

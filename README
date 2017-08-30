@@ -15,3 +15,4 @@ truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.c
 
 truffle(development)> MetaCoin.deployed().then(instance => instance.getBalance.call(web3.eth.accounts[1])).then(bal => console.log(bal.toNumber()))
 0
+
